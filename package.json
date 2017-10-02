@@ -1,0 +1,18 @@
+{
+  "name": "express-react-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "cd client && npm install --only=dev && npm install && npm run build && cd ..",
+    "build:production": "npm run build && cp -a client/build/. public/"
+  },
+  "author": "Taylor Wu",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.1",
+    "morgan": "^1.9.0"
+  }
+}
